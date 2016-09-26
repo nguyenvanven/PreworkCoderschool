@@ -2,7 +2,12 @@
 <div class="container">
   <h1>Sang's blog</h1>
   <h3>My first rails application for coder school</h3>
-
+  <%= form_tag(articles_path, :method => 'get', id:"search-form") do %>
+  <p>
+  	<%= text_field_tag :search, params[:search] %>
+  	<%= submit_tag "Search", :name=>nil %>
+  </p>
+  <% end %>
   <%= render @articles%>
   <br>
 
