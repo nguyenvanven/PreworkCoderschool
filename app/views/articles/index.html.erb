@@ -1,13 +1,22 @@
-<p id="notice"><%= notice %></p>
 <div class="container">
-  <h1>Ven's blog</h1>
+  <p id="notice"><%= notice %></p>
+  <nav class="navbar navbar-dark bg-inverse">
+    <div class="nav navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">New</a>
+      <a class="nav-item nav-link" href="#">Search</a>
+      <a class="nav-item nav-link" href="#">About</a>
+    </div>
+    <%= form_tag(articles_path, :method => 'get', :class=>'form-search pull-xs-right', id:"search-form") do %>
+    <p>
+      <%= text_field_tag :search, params[:search], :class=>'search-query' %>
+      <%= submit_tag "Search", :name=>nil, :class=>'btn-outline-info' %>
+    </p>
+    <% end %>
+  </nav>
+  <h1 class="text-info">Ven's blog</h1>
   <h3>My first rails application for coder school</h3>
-  <%= form_tag(articles_path, :method => 'get', id:"search-form") do %>
-  <p>
-  	<%= text_field_tag :search, params[:search] %>
-  	<%= submit_tag "Search", :name=>nil %>
-  </p>
-  <% end %>
+  
   <%= render @articles%>
   <br>
 
