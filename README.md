@@ -1,8 +1,8 @@
 # Pre-work - *Ven's blog*
 
 > HINT: Please
-> - include this README.md in your project and fill out the information. 
-> - remove the `README.rdoc` file that Rails generates. 
+> - include this README.md in your project and fill out the information.
+> - remove the `README.rdoc` file that Rails generates.
 > - remove all the HINT blocks in this file.
 
 **Ven's blog** is a Ruby on Rails blog application.
@@ -25,17 +25,17 @@ The following **required** functionality is complete:
 * [X] User can submit a search term to find all posts bywith titles containing the search term.
 
 The following **optional** features are implemented:
-* [ ] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/. 
-* [ ] User can see how many views a post has. 
+* [x] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/. 
+* [ ] User can see how many views a post has.
 * [ ] User can leave a comment on a post.
-* [ ] User can add "tags" to a post, and filter posts by tag. 
+* [ ] User can add "tags" to a post, and filter posts by tag.
 
 
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
 
-## Video Walkthrough 
+## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
